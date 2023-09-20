@@ -119,7 +119,7 @@ OBS: esta combinação será possível por meio de manupulação programada com 
 
     /* O flex fará a lista de links aparecer */
     display: flex;
-    
+
     /* Com os links em forma de coluna (vertical) */
     flex-direction: column;
 
@@ -131,3 +131,16 @@ OBS: esta combinação será possível por meio de manupulação programada com 
     left: 0;
     right: 0;
 }
+
+
+/* Exercícios */
+
+/* 1) Crie uma regra CSS para formatar o artigo/seção de Destaque com as seguintes configurações
+
+- Altura de uns 500px
+- Imagem de fundo (fundo-destaque)
+- Imagem de fundo deve ficar parada
+- Flexcom alinhamento totalmente centralizado e um elemento em cima do outro (ou seja, em modo coluna) 
+*/
+
+/* 2) Crie uma regra CSS para formatar o h2 e o p contidos em Destaque. Faça com que os textos fiquem centralizados e com a cor clara  */
