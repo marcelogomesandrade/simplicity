@@ -200,9 +200,11 @@ article h2 {
 
 }
 
-.front-end, .historia, .localizacao {
+.front-end, .historia, .localizacao, .limitador {
 
     text-align: center;
+    width: 95vw;
+    margin: auto;
 
 }
 
@@ -225,3 +227,106 @@ address {
 
     font-size: normal;
 }
+
+/* Exercício 
+
+/* 1) Crie uma regra para formatar o artigo de História da Internet com:
+- Plano de fundo: imagem "fundo-madeira"
+- Deixe a imagem parada e cobrindo todo o espaço do artigo*/
+
+.historia {
+
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+}
+
+
+
+
+/* 2) Crie uma regra para formatar o titulo "História da Internet" com cor clara e uma sombra no texto.*/
+
+.historia h2 {
+
+    
+    color: var(--cor-clara);
+    text-shadow: var(--cor-escura) 0 0 10px;
+
+}
+
+/* 3) Crie uma regra para formatar o vídeo do artigo História da Internet com:
+- Largura de 100%
+- Largura máxima de 700px
+- Margem inferior de 2rem*/
+
+
+.historia iframe { 
+
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+ 
+
+/* 4) Crie uma regra para formatar o mapa da Localização com:
+- Largura de 100%
+- Margem superior de 2rem*/
+
+.localizacao iframe{
+
+    width: 100%;
+    margin-top: 2rem;
+}
+
+ 
+
+/* 5) Crie uma classe chamada "limitador" com largura de 95vw e margem automática. 
+Aplique esta classe no cabeçalho e no artigo front-end.*/
+
+.limitador {
+
+    width: 95vw;
+    margin: auto;
+}
+
+
+/* 6) Crie uma regra para o rodapé com:
+- Fundo escuro
+- Cor do texto clara
+- Altura de 30vh
+- Negrito
+- Flex com centralização total
+- Texto centralizado*/
+
+footer {
+
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    height: 30vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
