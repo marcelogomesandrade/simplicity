@@ -65,7 +65,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 15vh;
+    height: 12vh;
 
 }
 
@@ -149,7 +149,7 @@ OBS: esta combinação será possível por meio de manupulação programada com 
 
 .destaque {
 
-    height: 85vh;
+    height: 88vh;
     background-image: url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
     display:flex;
