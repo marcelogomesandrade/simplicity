@@ -166,8 +166,11 @@ OBS: esta combinação será possível por meio de manupulação programada com 
 
  }
 /* função clamp (tamanho minimo, tamanho médio, tamanho máximo */
- .destaque h2 {
+ .destaque h2, .destaque p {
     font-size: clamp(3rem, 10vw,7rem);
+    animation-name: animaDestaque;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
  }
 
  .destaque p {
@@ -175,4 +178,15 @@ OBS: esta combinação será possível por meio de manupulação programada com 
     font-size: clamp(1.5rem,3vw,3rem);
  }
 
- 
+ /* Regra de animação */
+ @keyframes animaDestaque{ 
+
+    from {opacity: 0;
+          transform: translateY(-500px);}
+
+    to {opacity: 1;}
+
+    
+ }
+
+
