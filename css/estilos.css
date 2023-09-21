@@ -149,8 +149,16 @@ OBS: esta combinação será possível por meio de manupulação programada com 
 .destaque {
 
     height: 500px;
-    background: url(../imagens/fundo-destaque.jpg);
-    
-    
-   
+    background-image: url(../imagens/fundo-destaque.jpg);
+    background-attachment: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+ .destaque h2, .destaque {
+
+    text-align: center;
+    color: var(--cor-clara);
+ }
