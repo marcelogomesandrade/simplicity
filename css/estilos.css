@@ -162,4 +162,17 @@ OBS: esta combinação será possível por meio de manupulação programada com 
 
     text-align: center;
     color: var(--cor-clara);
+
+
  }
+/* função clamp (tamanho minimo, tamanho médio, tamanho máximo */
+ .destaque h2 {
+    font-size: clamp(3rem, 10vw,7rem);
+ }
+
+ .destaque p {
+
+    font-size: clamp(1.5rem,3vw,3rem);
+ }
+
+ 
