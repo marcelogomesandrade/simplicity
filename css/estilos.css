@@ -329,6 +329,23 @@ footer {
     text-align: center;
 }
 
+/* Regras para as páginas Produtos, Serviços e Contato */
+
+.conteudo 
+   {
+    background-color: var(--cor-intermediaria);
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: justify;
+   }
+
+.conteudo h2 {
+    padding-left: 0;
+    font-size: 1.8rem;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+}
+
 
 @media screen and (min-width:570px) {
 
@@ -378,3 +395,4 @@ Reduzir para 200 px a altura da imagem contida no artigo Front-end
  
  Definir o tamanho máximo de classe limitador para 1000px 
  */
+
