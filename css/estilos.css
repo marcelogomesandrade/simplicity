@@ -60,12 +60,21 @@ a {
     text-decoration: none;
 }
 
-header {
-
+header .limitador {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 12vh;
+         
+}
+
+header {
+
+    
+
+    position: sticky;
+    top: 0;
+    background-color:var(--cor-clara);
 
 }
 
@@ -126,7 +135,7 @@ OBS: esta combinação será possível por meio de manupulação programada com 
 
     /* Aplicamos um fundo á lista evitandoa dificuldade de leitura dos links. */
     background-color: var(--cor-clara);
-    
+
     /* Usamos as propriedades de posicionamento e coordenadas para garantir o encaixe correto (abaixo do título e da palavra Menu). */
     position: absolute;
     left: 0;
@@ -152,55 +161,65 @@ OBS: esta combinação será possível por meio de manupulação programada com 
     height: 88vh;
     background-image: url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
- .destaque h2, .destaque {
+.destaque h2,
+.destaque {
 
     text-align: center;
     color: var(--cor-clara);
 
 
- }
+}
+
 /* função clamp (tamanho minimo, tamanho médio, tamanho máximo */
- .destaque h2, .destaque p {
-    font-size: clamp(3rem, 10vw,7rem);
+.destaque h2,
+.destaque p {
+    font-size: clamp(3rem, 10vw, 7rem);
     animation-name: animaDestaque;
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
- }
+}
 
- .destaque p {
+.destaque p {
 
-    font-size: clamp(1.5rem,3vw,3rem);
- }
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
 
- /* Regra de animação */
- @keyframes animaDestaque{ 
+/* Regra de animação */
+@keyframes animaDestaque {
 
-    from {opacity: 0;
-          transform: translateY(-500px);}
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
 
-    to {opacity: 1;}
+    to {
+        opacity: 1;
+    }
 
-    
- }
+
+}
 
 
 article h2 {
 
     padding: 1rem;
     font-size: 2rem;
-    font-family: Raleway,sans-serif;
+    font-family: Raleway, sans-serif;
     color: var(--cor-titulo);
-    
+
 
 }
 
-.front-end, .historia, .localizacao, .limitador {
+.front-end,
+.historia,
+.localizacao,
+.limitador {
 
     text-align: center;
     width: 95vw;
@@ -247,7 +266,7 @@ address {
 
 .historia h2 {
 
-    
+
     color: var(--cor-clara);
     text-shadow: var(--cor-escura) 0 0 10px;
 
@@ -259,25 +278,25 @@ address {
 - Margem inferior de 2rem*/
 
 
-.historia iframe { 
+.historia iframe {
 
     width: 100%;
     max-width: 700px;
     margin-bottom: 2rem;
 }
- 
+
 
 /* 4) Crie uma regra para formatar o mapa da Localização com:
 - Largura de 100%
 - Margem superior de 2rem*/
 
-.localizacao iframe{
+.localizacao iframe {
 
     width: 100%;
     margin-top: 2rem;
 }
 
- 
+
 
 /* 5) Crie uma classe chamada "limitador" com largura de 95vw e margem automática. 
 Aplique esta classe no cabeçalho e no artigo front-end.*/
@@ -286,6 +305,7 @@ Aplique esta classe no cabeçalho e no artigo front-end.*/
 
     width: 95vw;
     margin: auto;
+
 }
 
 
@@ -311,22 +331,3 @@ footer {
 
 
 /*  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
