@@ -330,14 +330,21 @@ footer {
 }
 
 
-@media screen and(min-width:570px) {
+@media screen and (min-width:570px) {
 
     nav h2 {display: none;}
     li {width: 100%;}
-    menu {display: flex;}
+    .menu {display: flex;}
     nav {width: 70%;}
-    figure {width: 200px;}
+    .front-end img {: 200px;}
 
+}
+
+@media screen and (min-width:900px) {
+
+    .h1 .h2 .p {font-size: 18px;}
+    .limitador {max-width: 1000px;}
+    
 }
 
    
