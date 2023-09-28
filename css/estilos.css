@@ -330,9 +330,18 @@ footer {
 }
 
 
-@media screen {
-    
+@media screen and(min-width:570px) {
+
+    nav h2 {display: none;}
+    li {width: 100%;}
+    menu {display: flex;}
+    nav {width: 70%;}
+    figure {width: 200px;}
+
 }
+
+   
+
 
 /* Exercícios: regras condicionais (Media Queries) */
 
