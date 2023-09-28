@@ -335,14 +335,15 @@ footer {
     nav h2 {display: none;}
     li {width: 100%;}
     .menu {display: flex;}
+    .menu li {width: 100%;}
     nav {width: 70%;}
-    .front-end img {: 200px;}
+    .front-end img {height: 200px;}
 
 }
 
 @media screen and (min-width:900px) {
 
-    .h1 .h2 .p {font-size: 18px;}
+    html {font-size: 18px;}
     .limitador {max-width: 1000px;}
     
 }
