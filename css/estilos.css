@@ -37,8 +37,35 @@ figure,
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
+
 }
+
+
+
+.galeria {
+
+    text-align: center;
+
+}
+
+.galeria img {
+    border-radius: 100%;
+    transform: scale(0.9);
+
+
+}
+
+/* Aplicamos o :hover e o :focus ao seletor de tag "a" em vez de aplicar no "img". Desta forma , o acionamento funcionará tanto com o mouse quando com teclado */
+
+.galeria a:before img, .galeria a:focus img {
+
+    transform: scale(1);
+    border-radius: 10%;
+}
+
+
+
 
 h1 {
     font-family: Raleway, sans-serif;
@@ -404,7 +431,9 @@ td:last-child::before {
     left: 10px;
 }
 
-.conteudo h2::before {content :"🧑‍🔧";}
+.conteudo h2::before {
+    content: "🧑‍🔧";
+}
 
 
 th:first-child {
