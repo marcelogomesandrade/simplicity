@@ -404,6 +404,7 @@ td:last-child::before {
     left: 10px;
 }
 
+.conteudo h2::before {content :"🧑‍🔧";}
 
 
 th:first-child {
