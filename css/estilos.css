@@ -58,7 +58,7 @@ img {
 
 /* Aplicamos o :hover e o :focus ao seletor de tag "a" em vez de aplicar no "img". Desta forma , o acionamento funcionará tanto com o mouse quando com teclado */
 
-.galeria a:before img, .galeria a:focus img {
+.galeria a:hover img, .galeria a:focus img {
 
     transform: scale(1);
     border-radius: 10%;
