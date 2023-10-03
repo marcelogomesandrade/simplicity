@@ -437,7 +437,7 @@ td:last-child::before {
     left: 10px;
 }
 
-
+/* No caso de conflito, as regras criadas aqui SEMPRE irão prevalecer  */
 .conteudo h2::before {content: "🧑‍🔧";}
 
 
