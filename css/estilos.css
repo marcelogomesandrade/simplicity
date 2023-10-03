@@ -65,16 +65,16 @@ header .limitador {
     align-items: center;
     justify-content: space-between;
     height: 12vh;
-         
+
 }
 
 header {
 
-    
+
 
     position: sticky;
     top: 0;
-    background-color:var(--cor-clara);
+    background-color: var(--cor-clara);
 
 }
 
@@ -331,13 +331,12 @@ footer {
 
 /* Regras para as páginas Produtos, Serviços e Contato */
 
-.conteudo 
-   {
+.conteudo {
     background-color: var(--cor-intermediaria);
     padding: 0.5rem;
     border-radius: 8px;
     text-align: justify;
-   }
+}
 
 .conteudo h2 {
     padding-left: 0;
@@ -353,9 +352,11 @@ table {
     border: solid 1px;
 }
 
-table, th,td {
+table,
+th,
+td {
 
-    border:solid 1px;
+    border: solid 1px;
     border-collapse: collapse;
 
 
@@ -374,39 +375,86 @@ th {
     color: var(--cor-clara);
     border-color: var(--cor-escura);
     padding: 0.7rem;
-    
+
 }
 
 td {
     padding: 0.5rem;
-    
+
 }
 
-td:nth-child(2){text-align: center;}
-th:last-child, td:last-child {text-align: right;}
-th:first-child {text-align: left;}
+td:nth-child(2) {
+    text-align: center;
+}
 
-tr:nth-child(odd){background-color: var(--cor-clara);}
+th:last-child,
+td:last-child {
+    text-align: right;
+}
+
+/* Pseudo-elemento ::before :, :after */
+
+td:last-child {
+    position: relative;
+}
+
+td:last-child::before {
+    content: "R$";
+    position: absolute;
+    left: 10px;
+}
+
+
+
+th:first-child {
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--cor-clara);
+}
 
 @media screen and (min-width:570px) {
 
-    nav h2 {display: none;}
-    li {width: 100%;}
-    .menu {display: flex;}
-    .menu li {width: 100%;}
-    nav {width: 70%;}
-    .front-end img {height: 200px;}
+    nav h2 {
+        display: none;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    nav {
+        width: 70%;
+    }
+
+    .front-end img {
+        height: 200px;
+    }
 
 }
 
 @media screen and (min-width:900px) {
 
-    html {font-size: 18px;}
-    .limitador {max-width: 1000px;}
-    
+    html {
+        font-size: 18px;
+    }
+
+    .limitador {
+        max-width: 1000px;
+    }
+
 }
 
-   
+
 
 
 /* Exercícios: regras condicionais (Media Queries) */
@@ -436,4 +484,3 @@ Reduzir para 200 px a altura da imagem contida no artigo Front-end
  
  Definir o tamanho máximo de classe limitador para 1000px 
  */
-
