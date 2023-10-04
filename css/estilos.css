@@ -59,12 +59,13 @@ img {
 
 /* Aplicamos o :hover e o :focus ao seletor de tag "a" em vez de aplicar no "img". Desta forma , o acionamento funcionará tanto com o mouse quando com teclado */
 
-.galeria a:hover img, .galeria a:focus img {
+.galeria a:hover img,
+.galeria a:focus img {
 
     transform: scale(1);
     border-radius: 10%;
     filter: blur(0);
-    
+
 }
 
 
@@ -438,7 +439,9 @@ td:last-child::before {
 }
 
 /* No caso de conflito, as regras criadas aqui SEMPRE irão prevalecer  */
-.conteudo h2::before {content: "🧑‍🔧";}
+.conteudo h2::before {
+    content: "🧑‍🔧";
+}
 
 
 
@@ -450,6 +453,40 @@ th:first-child {
 tr:nth-child(odd) {
     background-color: var(--cor-clara);
 }
+
+/* Regras para o formulário */
+
+form {
+
+    max-width: 500px;
+    margin: auto;
+    background-color: aqua;
+}
+
+input,
+select,
+textarea {
+
+    border: none;
+    padding: 4px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+textarea {
+
+    height: auto;
+}
+
+form div {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
 
 
 
