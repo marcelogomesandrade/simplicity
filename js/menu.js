@@ -18,5 +18,17 @@ menu.classList.toggle("aberto");
 
 // preventDefault é Anular ou prevenir o comportamento padrão do link
 
+if(menu.classList.contains("aberto")){
+    textBotao.innerHTML = "Fechar &times;";
+
+
+} else {
+
+    textBotao.innerHTML = "Menu &equiv;"
+}
+
+
 });
+
+
 
