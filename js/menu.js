@@ -12,5 +12,11 @@ const menu = document.querySelector (".menu");
 
 const textBotao = botaoMenu.querySelector ("a");
 
+botaoMenu.addEventListener ("click",function(event){
+event.preventDefault();   
+menu.classList.toggle("aberto");
 
+// preventDefault é Anular ou prevenir o comportamento padrão do link
+
+});
 
