@@ -58,10 +58,10 @@ botaoBuscar.addEventListener("click", async function (event) {
         mensagem.textContent = "CEP encontrado!";
         mensagem.style.color = "purple";
 
-        campoEndereco.value =  
-        campoBairro.value =
-        campoCidade.value =
-        campoEstado.value = 
+        campoEndereco.value = dados.logradouro; 
+        campoBairro.value = dados.bairro;
+        campoCidade.value = dados.localidade;
+        campoEstado.value = dados.uf; 
 
 
     }
