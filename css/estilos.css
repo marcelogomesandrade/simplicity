@@ -603,3 +603,12 @@ Reduzir para 200 px a altura da imagem contida no artigo Front-end
  
  Definir o tamanho máximo de classe limitador para 1000px 
  */
+
+
+ #buscar {
+
+    width: 39%;
+    padding: 12px;
+ }
+
+ #status {font-size:12px;}
