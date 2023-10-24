@@ -21,6 +21,7 @@ const campoTelefone = $("#telefone");
 
 // Ativando a máscara para o telefone 
 $(campoTelefone).mask ("(00) 0000-0000"); // Exemplo: (11) 2135-0009
+$(campoCep).mask("00000-000");// Exemplo: 02220-340
 
 
 // Detectando o evento de CLICK no botão buscar 
@@ -32,7 +33,7 @@ botaoBuscar.addEventListener("click", async function (event) {
     //undefined 
     /* Verificando se o cep NÃO tem 8 dígitos */
 
-    if (campoCep.value.length !== 8) {
+    if (campoCep.value.length !== 9) {
         //Alerte o usuário sobre o erro de digitação 
 
         mensagem.textContent = "Digite um CEP válido!";
