@@ -12,6 +12,7 @@ const campoEstado = formulario.querySelector("#estado");
 const botaoBuscar = formulario.querySelector("#buscar");
 const mensagem = formulario.querySelector("#status");
 
+
 // Seleção do campo telefone usando JS PURO
 
 //const campoTelefone = formulario.querySelector ("#telefone");
@@ -20,7 +21,7 @@ const mensagem = formulario.querySelector("#status");
 const campoTelefone = $("#telefone");
 
 // Ativando a máscara para o telefone 
-$(campoTelefone).mask ("(00) 0000-0000"); // Exemplo: (11) 2135-0009
+$(campoTelefone).mask ("(00)0000-0000"); // Exemplo: (11) 2135-0009
 $(campoCep).mask("00000-000");// Exemplo: 02220-340
 
 
