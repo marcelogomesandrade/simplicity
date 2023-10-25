@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplicity | Contato </title>
+
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -43,10 +46,14 @@
             <br>
 
             <figure class="galeria">
-                <a href="imagens/consultoria-treinamento.jpg"><img src="imagens/consultoria-treinamento-mini.jpg" alt=""></a>
-                <a href="imagens/desenvolvimento-web.jpg"><img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a> 
-                <a href="imagens/design-grafico.jpg"><img src="imagens/design-grafico-mini.jpg" alt=""></a>
-                <a href="imagens/marketing-digital.jpg"><img src="imagens/marketing-digital-mini.jpg" alt=""></a>
+                <a data-title="Desenvolvimento de sites" data-lightbox="fotos" href="imagens/consultoria-treinamento.jpg"><img src="imagens/consultoria-treinamento-mini.jpg"
+                        alt=""></a>
+
+                <a data-title = "Design gráfico"data-lightbox="fotos" href ="imagens/desenvolvimento-web.jpg"><img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a>
+
+                <a data-title="Venda e convença "data-lightbox="fotos" href="imagens/design-grafico.jpg"><img src="imagens/design-grafico-mini.jpg" alt=""></a>
+
+                <a data-title= "Prepare-se para o mercado" data-lightbox="fotos"href="imagens/marketing-digital.jpg"><img src="imagens/marketing-digital-mini.jpg" alt=""></a>
 
             </figure>
 
@@ -68,6 +75,21 @@
 
     </footer>
 
+    <!-- Importação da biblioteca jQuery-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Importação do JS do plugin / extensão lightbox -->
+
+    <script src="lightbox/js/lightbox.min.js"></script>
+
+   <script>
+
+lightbox.option ({
+    albumLabel:"Foto %1 de %2"
+});
+
+   </script>
     <script src="js/menu.js"></script>
 
 </body>

@@ -79,3 +79,36 @@ botaoBuscar.addEventListener("click", async function (event) {
 
     }
 });
+
+/* Programação do Formspree*/
+
+
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: formulario.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Seus dados foram enviados! Aguarde que retornaremos";
+          formulario.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Algo que está errado! Por favor, recomeçar novamente com os dados!"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Algo que está errado! Por favor, recomeçar novamente com os dados!"
+      });
+    }
+    formulario.addEventListener("submit", handleSubmit)
